@@ -1,0 +1,18 @@
++ gcc -Os -isystem /lib/modules/3.13.11-ckt15/build/include -isystem /lib/modules/3.13.11-ckt15/build/include/uapi -isystem /lib/modules/3.13.11-ckt15//source/arch/x86/include/generated -I /lib/modules/3.13.11-ckt15//source/arch/x86/include -I /lib/modules/3.13.11-ckt15//source/include -Wall -Werror -Werror-implicit-function-declaration -fno-strict-aliasing -include generated/autoconf.h -o tmp/3.13.11-ckt15/dmi_walk=1.E.c -E /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/dmi_walk=1.c
++ gcc -Os -isystem /lib/modules/3.13.11-ckt15/build/include -isystem /lib/modules/3.13.11-ckt15/build/include/uapi -isystem /lib/modules/3.13.11-ckt15//source/arch/x86/include/generated -I /lib/modules/3.13.11-ckt15//source/arch/x86/include -I /lib/modules/3.13.11-ckt15//source/include -Wall -Werror -Werror-implicit-function-declaration -fno-strict-aliasing -include generated/autoconf.h -o tmp/3.13.11-ckt15/dmi_walk=1.o -c /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/dmi_walk=1.c
+/home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/dmi_walk=1.c: In function ‘foo’:
+/home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/dmi_walk=1.c:11:2: error: passing argument 1 of ‘dmi_walk’ from incompatible pointer type [-Werror]
+  dmi_walk(&dmi_walk_cb);
+  ^
+In file included from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/dmi_walk=1.c:3:0:
+/lib/modules/linux-3.13.0/include/linux/dmi.h:108:12: note: expected ‘void (*)(const struct dmi_header *, void *)’ but argument is of type ‘void (*)(const struct dmi_header *)’
+ extern int dmi_walk(void (*decode)(const struct dmi_header *, void *),
+            ^
+/home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/dmi_walk=1.c:11:2: error: too few arguments to function ‘dmi_walk’
+  dmi_walk(&dmi_walk_cb);
+  ^
+In file included from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/dmi_walk=1.c:3:0:
+/lib/modules/linux-3.13.0/include/linux/dmi.h:108:12: note: declared here
+ extern int dmi_walk(void (*decode)(const struct dmi_header *, void *),
+            ^
+cc1: all warnings being treated as errors

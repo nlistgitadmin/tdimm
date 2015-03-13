@@ -1,0 +1,10 @@
++ gcc -Os -isystem /lib/modules/3.13.0-45-generic/build/include -isystem /lib/modules/3.13.0-45-generic/build/include/uapi -isystem /lib/modules/3.13.0-45-generic/build/arch/x86/include/generated -I /lib/modules/3.13.0-45-generic/build/arch/x86/include -Wall -Werror -Werror-implicit-function-declaration -DKBUILD_BASENAME= -include generated/autoconf.h -o tmp/3.13.0-45-generic/bio_endio=3.E.c -E /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/bio_endio=3.c
++ gcc -Os -isystem /lib/modules/3.13.0-45-generic/build/include -isystem /lib/modules/3.13.0-45-generic/build/include/uapi -isystem /lib/modules/3.13.0-45-generic/build/arch/x86/include/generated -I /lib/modules/3.13.0-45-generic/build/arch/x86/include -Wall -Werror -Werror-implicit-function-declaration -DKBUILD_BASENAME= -include generated/autoconf.h -o tmp/3.13.0-45-generic/bio_endio=3.o -c /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/bio_endio=3.c
+/home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/bio_endio=3.c: In function ‘foo’:
+/home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/bio_endio=3.c:7:2: error: too many arguments to function ‘bio_endio’
+  bio_endio(bio, 0, 0);
+  ^
+In file included from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/bio_endio=3.c:3:0:
+/usr/src/linux-headers-3.13.0-45/include/linux/bio.h:256:13: note: declared here
+ extern void bio_endio(struct bio *, int);
+             ^

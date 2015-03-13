@@ -1,0 +1,10 @@
++ gcc -Os -isystem /lib/modules/3.13.11-ckt15/build/include -isystem /lib/modules/3.13.11-ckt15/build/include/uapi -isystem /lib/modules/3.13.11-ckt15//source/arch/x86/include/generated -I /lib/modules/3.13.11-ckt15//source/arch/x86/include -I /lib/modules/3.13.11-ckt15//source/include -Wall -Werror -Werror-implicit-function-declaration -fno-strict-aliasing -include generated/autoconf.h -o tmp/3.13.11-ckt15/bio_endio=3.E.c -E /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/bio_endio=3.c
++ gcc -Os -isystem /lib/modules/3.13.11-ckt15/build/include -isystem /lib/modules/3.13.11-ckt15/build/include/uapi -isystem /lib/modules/3.13.11-ckt15//source/arch/x86/include/generated -I /lib/modules/3.13.11-ckt15//source/arch/x86/include -I /lib/modules/3.13.11-ckt15//source/include -Wall -Werror -Werror-implicit-function-declaration -fno-strict-aliasing -include generated/autoconf.h -o tmp/3.13.11-ckt15/bio_endio=3.o -c /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/bio_endio=3.c
+/home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/bio_endio=3.c: In function ‘foo’:
+/home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/bio_endio=3.c:7:2: error: too many arguments to function ‘bio_endio’
+  bio_endio(bio, 0, 0);
+  ^
+In file included from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/bio_endio=3.c:3:0:
+/lib/modules/linux-3.13.0/include/linux/bio.h:256:13: note: declared here
+ extern void bio_endio(struct bio *, int);
+             ^

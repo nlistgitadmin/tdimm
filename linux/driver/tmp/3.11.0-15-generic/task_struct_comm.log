@@ -1,0 +1,77 @@
++ gcc -Os -isystem /lib/modules/3.11.0-15-generic/build/include -isystem /lib/modules/3.11.0-15-generic/build/include/uapi -isystem /lib/modules/3.11.0-15-generic/build/arch/x86/include/generated -I /lib/modules/3.11.0-15-generic/build/arch/x86/include -Wall -Werror -Werror-implicit-function-declaration -DKBUILD_BASENAME= -include generated/autoconf.h -o tmp/3.11.0-15-generic/task_struct_comm.E.c -E /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c
+In file included from /lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:13:0,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/net/netns/mib.h:15:15: error: missing binary operator before token "("
+In file included from /lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:17:0,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/net/netns/ipv6.h:77:15: error: missing binary operator before token "("
+In file included from /lib/modules/3.11.0-15-generic/build/include/linux/netfilter.h:5:0,
+                 from /lib/modules/3.11.0-15-generic/build/include/net/netns/netfilter.h:5,
+                 from /lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:20,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/linux/skbuff.h:2648:15: error: missing binary operator before token "("
+In file included from /lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:21:0,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/net/netns/x_tables.h:18:15: error: missing binary operator before token "("
+/lib/modules/3.11.0-15-generic/build/include/net/netns/x_tables.h:21:15: error: missing binary operator before token "("
+In file included from /lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:25:0,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/net/netns/xfrm.h:59:15: error: missing binary operator before token "("
+In file included from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:14:0,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:88:15: error: missing binary operator before token "("
+/lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:103:15: error: missing binary operator before token "("
+/lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:118:15: error: missing binary operator before token "("
++ gcc -Os -isystem /lib/modules/3.11.0-15-generic/build/include -isystem /lib/modules/3.11.0-15-generic/build/include/uapi -isystem /lib/modules/3.11.0-15-generic/build/arch/x86/include/generated -I /lib/modules/3.11.0-15-generic/build/arch/x86/include -Wall -Werror -Werror-implicit-function-declaration -DKBUILD_BASENAME= -include generated/autoconf.h -o tmp/3.11.0-15-generic/task_struct_comm.o -c /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c
+In file included from /lib/modules/3.11.0-15-generic/build/include/uapi/linux/kernel.h:4:0,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/kernel.h:16,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/cache.h:4,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/rcupdate.h:37,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:4,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:8:2: error: unknown type name ‘__kernel_long_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:9:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:10:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:11:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:12:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:13:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:14:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:15:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:18:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:19:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:21:22: error: ‘__kernel_ulong_t’ undeclared here (not in a function)
+In file included from /lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:13:0,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/net/netns/mib.h:15:15: error: missing binary operator before token "("
+In file included from /lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:17:0,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/net/netns/ipv6.h:77:15: error: missing binary operator before token "("
+In file included from /lib/modules/3.11.0-15-generic/build/include/linux/netfilter.h:5:0,
+                 from /lib/modules/3.11.0-15-generic/build/include/net/netns/netfilter.h:5,
+                 from /lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:20,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/linux/skbuff.h: In function ‘nf_reset_trace’:
+/lib/modules/3.11.0-15-generic/build/include/linux/skbuff.h:2648:15: error: missing binary operator before token "("
+In file included from /lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:21:0,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/net/netns/x_tables.h: At top level:
+/lib/modules/3.11.0-15-generic/build/include/net/netns/x_tables.h:18:15: error: missing binary operator before token "("
+/lib/modules/3.11.0-15-generic/build/include/net/netns/x_tables.h:21:15: error: missing binary operator before token "("
+In file included from /lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:25:0,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/net/netns/xfrm.h:59:15: error: missing binary operator before token "("
+In file included from /lib/modules/3.11.0-15-generic/build/include/linux/init_task.h:14:0,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:88:15: error: missing binary operator before token "("
+/lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:103:15: error: missing binary operator before token "("
+/lib/modules/3.11.0-15-generic/build/include/net/net_namespace.h:118:15: error: missing binary operator before token "("

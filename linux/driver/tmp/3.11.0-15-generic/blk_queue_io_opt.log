@@ -1,0 +1,16 @@
++ gcc -Os -isystem /lib/modules/3.11.0-15-generic/build/include -isystem /lib/modules/3.11.0-15-generic/build/include/uapi -isystem /lib/modules/3.11.0-15-generic/build/arch/x86/include/generated -I /lib/modules/3.11.0-15-generic/build/arch/x86/include -Wall -Werror -Werror-implicit-function-declaration -DKBUILD_BASENAME= -include generated/autoconf.h -o tmp/3.11.0-15-generic/blk_queue_io_opt.E.c -E /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/blk_queue_io_opt.c
++ gcc -Os -isystem /lib/modules/3.11.0-15-generic/build/include -isystem /lib/modules/3.11.0-15-generic/build/include/uapi -isystem /lib/modules/3.11.0-15-generic/build/arch/x86/include/generated -I /lib/modules/3.11.0-15-generic/build/arch/x86/include -Wall -Werror -Werror-implicit-function-declaration -DKBUILD_BASENAME= -include generated/autoconf.h -o tmp/3.11.0-15-generic/blk_queue_io_opt.o -c /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/blk_queue_io_opt.c
+In file included from /lib/modules/3.11.0-15-generic/build/include/uapi/linux/kernel.h:4:0,
+                 from /lib/modules/3.11.0-15-generic/build/include/linux/kernel.h:16,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/blk_queue_io_opt.c:3:
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:8:2: error: unknown type name ‘__kernel_long_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:9:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:10:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:11:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:12:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:13:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:14:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:15:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:18:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:19:2: error: unknown type name ‘__kernel_ulong_t’
+/lib/modules/3.11.0-15-generic/build/include/uapi/linux/sysinfo.h:21:22: error: ‘__kernel_ulong_t’ undeclared here (not in a function)

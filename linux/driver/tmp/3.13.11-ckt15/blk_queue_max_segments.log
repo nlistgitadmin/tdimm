@@ -1,0 +1,48 @@
++ gcc -Os -isystem /lib/modules/3.13.11-ckt15/build/include -isystem /lib/modules/3.13.11-ckt15/build/include/uapi -isystem /lib/modules/3.13.11-ckt15//source/arch/x86/include/generated -I /lib/modules/3.13.11-ckt15//source/arch/x86/include -I /lib/modules/3.13.11-ckt15//source/include -Wall -Werror -Werror-implicit-function-declaration -fno-strict-aliasing -include generated/autoconf.h -o tmp/3.13.11-ckt15/blk_queue_max_segments.E.c -E /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/blk_queue_max_segments.c
+In file included from /lib/modules/linux-3.13.0/include/linux/sched.h:24:0,
+                 from /lib/modules/linux-3.13.0/include/linux/blkdev.h:4,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/blk_queue_max_segments.c:3:
+/lib/modules/linux-3.13.0/include/linux/mm_types.h:144:45: error: missing binary operator before token "("
+ #if defined(CONFIG_TRANSPARENT_HUGEPAGE) && USE_SPLIT_PMD_PTLOCKS
+                                             ^
+/lib/modules/linux-3.13.0/include/linux/mm_types.h:429:46: error: missing binary operator before token "("
+ #if defined(CONFIG_TRANSPARENT_HUGEPAGE) && !USE_SPLIT_PMD_PTLOCKS
+                                              ^
+In file included from /lib/modules/linux-3.13.0/include/linux/dcache.h:12:0,
+                 from /lib/modules/linux-3.13.0/include/linux/fs.h:8,
+                 from /lib/modules/linux-3.13.0/include/linux/genhd.h:65,
+                 from /lib/modules/linux-3.13.0/include/linux/blkdev.h:9,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/blk_queue_max_segments.c:3:
+/lib/modules/linux-3.13.0/include/linux/lockref.h:26:5: error: missing binary operator before token "("
+ #if USE_CMPXCHG_LOCKREF
+     ^
+In file included from /lib/modules/linux-3.13.0/include/linux/sched.h:24:0,
+                 from /lib/modules/linux-3.13.0/include/linux/blkdev.h:4,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/blk_queue_max_segments.c:3:
+/lib/modules/linux-3.13.0/include/linux/mm.h:1525:5: error: missing binary operator before token "("
+ #if USE_SPLIT_PMD_PTLOCKS
+     ^
++ gcc -Os -isystem /lib/modules/3.13.11-ckt15/build/include -isystem /lib/modules/3.13.11-ckt15/build/include/uapi -isystem /lib/modules/3.13.11-ckt15//source/arch/x86/include/generated -I /lib/modules/3.13.11-ckt15//source/arch/x86/include -I /lib/modules/3.13.11-ckt15//source/include -Wall -Werror -Werror-implicit-function-declaration -fno-strict-aliasing -include generated/autoconf.h -o tmp/3.13.11-ckt15/blk_queue_max_segments.o -c /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/blk_queue_max_segments.c
+In file included from /lib/modules/linux-3.13.0/include/linux/sched.h:24:0,
+                 from /lib/modules/linux-3.13.0/include/linux/blkdev.h:4,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/blk_queue_max_segments.c:3:
+/lib/modules/linux-3.13.0/include/linux/mm_types.h:144:45: error: missing binary operator before token "("
+ #if defined(CONFIG_TRANSPARENT_HUGEPAGE) && USE_SPLIT_PMD_PTLOCKS
+                                             ^
+/lib/modules/linux-3.13.0/include/linux/mm_types.h:429:46: error: missing binary operator before token "("
+ #if defined(CONFIG_TRANSPARENT_HUGEPAGE) && !USE_SPLIT_PMD_PTLOCKS
+                                              ^
+In file included from /lib/modules/linux-3.13.0/include/linux/dcache.h:12:0,
+                 from /lib/modules/linux-3.13.0/include/linux/fs.h:8,
+                 from /lib/modules/linux-3.13.0/include/linux/genhd.h:65,
+                 from /lib/modules/linux-3.13.0/include/linux/blkdev.h:9,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/blk_queue_max_segments.c:3:
+/lib/modules/linux-3.13.0/include/linux/lockref.h:26:5: error: missing binary operator before token "("
+ #if USE_CMPXCHG_LOCKREF
+     ^
+In file included from /lib/modules/linux-3.13.0/include/linux/sched.h:24:0,
+                 from /lib/modules/linux-3.13.0/include/linux/blkdev.h:4,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/blk_queue_max_segments.c:3:
+/lib/modules/linux-3.13.0/include/linux/mm.h:1525:5: error: missing binary operator before token "("
+ #if USE_SPLIT_PMD_PTLOCKS
+     ^

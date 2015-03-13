@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TDimm" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TDimm" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TDimm" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../common/driver/td_bio.h" />
+		<Unit filename="../common/driver/td_biogrp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_biogrp.h" />
+		<Unit filename="../common/driver/td_command.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_command.h" />
+		<Unit filename="../common/driver/td_cpu.h" />
+		<Unit filename="../common/driver/td_discovery.h" />
+		<Unit filename="../common/driver/td_eng_completion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_eng_completion.h" />
+		<Unit filename="../common/driver/td_eng_conf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_eng_conf.h" />
+		<Unit filename="../common/driver/td_eng_hal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_eng_hal.h" />
+		<Unit filename="../common/driver/td_eng_latency.h" />
+		<Unit filename="../common/driver/td_eng_mcefree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_eng_mcefree.h" />
+		<Unit filename="../common/driver/td_eng_teradimm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_eng_teradimm.h" />
+		<Unit filename="../common/driver/td_engine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_engine.h" />
+		<Unit filename="../common/driver/td_engine_def.h" />
+		<Unit filename="../common/driver/td_histogram.h" />
+		<Unit filename="../common/driver/td_ioctl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_mapper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_mapper.h" />
+		<Unit filename="../common/driver/td_monitor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_monitor.h" />
+		<Unit filename="../common/driver/td_osdev.h" />
+		<Unit filename="../common/driver/td_raid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_raid.h" />
+		<Unit filename="../common/driver/td_stash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_stash.h" />
+		<Unit filename="../common/driver/td_token.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_token.h" />
+		<Unit filename="../common/driver/td_token_list.h" />
+		<Unit filename="../common/driver/td_trace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_trace.h" />
+		<Unit filename="../common/driver/td_ucmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_ucmd.h" />
+		<Unit filename="../common/driver/td_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/td_util.h" />
+		<Unit filename="../common/driver/tr_mirror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/driver/tr_stripe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/util/td_ata_cmd.h" />
+		<Unit filename="../common/util/td_bitmap.h" />
+		<Unit filename="../common/util/td_cache.h" />
+		<Unit filename="../common/util/td_checksum.h" />
+		<Unit filename="../common/util/td_compat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/util/td_compat.h" />
+		<Unit filename="../common/util/td_compat_linux.h" />
+		<Unit filename="../common/util/td_crypto.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/util/td_crypto.h" />
+		<Unit filename="../common/util/td_defs.h" />
+		<Unit filename="../common/util/td_errno.h" />
+		<Unit filename="../common/util/td_ioctl.h" />
+		<Unit filename="../common/util/td_limits.h" />
+		<Unit filename="../common/util/td_memcpy.h" />
+		<Unit filename="../common/util/td_memcpy_gcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/util/td_memspace.h" />
+		<Unit filename="../common/util/td_params.h" />
+		<Unit filename="../common/util/td_protocol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../common/util/td_protocol.h" />
+		<Unit filename="../common/util/td_raidmeta.h" />
+		<Unit filename="../linux/driver/config-linux-debug.h" />
+		<Unit filename="../linux/driver/lk_compat_acpi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/lk_compat_dmi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_bio_linux.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_bio_linux.h" />
+		<Unit filename="../linux/driver/td_biogrp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_block.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_command.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_compat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_control.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_control.h" />
+		<Unit filename="../linux/driver/td_crypto.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_dev_ata.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_dev_ata.h" />
+		<Unit filename="../linux/driver/td_devgroup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_devgroup.h" />
+		<Unit filename="../linux/driver/td_device.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_device.h" />
+		<Unit filename="../linux/driver/td_drv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_drv.h" />
+		<Unit filename="../linux/driver/td_eng_completion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_eng_conf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_eng_conf_sysfs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_eng_conf_sysfs.h" />
+		<Unit filename="../linux/driver/td_eng_hal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_eng_mcefree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_eng_teradimm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_engine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_ioctl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_kdefn.h" />
+		<Unit filename="../linux/driver/td_mapper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_mapper_linux.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_mon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_mon.h" />
+		<Unit filename="../linux/driver/td_monitor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_osdev.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_protocol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_raid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_scan.h" />
+		<Unit filename="../linux/driver/td_scan_asl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_scan_bios.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_stash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_token.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_token_bio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_trace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_ucmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_worker.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/td_worker.h" />
+		<Unit filename="../linux/driver/teradimm.mod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/teradimm_kabi-3.11.0-15-generic.h" />
+		<Unit filename="../linux/driver/teradimm_kabi-3.13.0-45-generic.h" />
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/4k_support.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/acpi_evaluate_object_typed.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/acpi_get_table_by_index.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/acpi_tables.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/atomic64.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/bio_bi_size.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/bio_endio=2.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/bio_endio=3.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/bio_list.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_max_segments.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_discard_granularity.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_discard_zeroes_data.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_flush.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_hardsect_size.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_io_min.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_io_opt.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_logical_block_size.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_max_discard_sectors.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_max_hw_sectors.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_max_phys_segments.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_max_sectors.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_max_segments.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_ordered=2.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_ordered=3.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/blk_queue_physical_block_size.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/block_ops_release_returns_int.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/bool.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/clflush.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/dmi_walk=1.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/dmi_walk=2.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/export_header.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/ioremap_cache.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/ioremap_wc.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/is_err_or_null.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/kzalloc_node.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/make_request_fn_returns_void.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/memcpy_inline.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/movntdqa.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/new_blk_dev_ops.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/pm_notifier.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/queue_flag_set_unlocked.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/ratelimit.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/time_after64.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/uintptr.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.11.0-15-generic/vmalloc_node.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/4k_support.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/acpi_evaluate_object_typed.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/acpi_get_table_by_index.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/acpi_tables.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/atomic64.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/bio_bi_size.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/bio_endio=2.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/bio_endio=3.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/bio_list.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_max_segments.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_discard_granularity.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_discard_zeroes_data.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_flush.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_hardsect_size.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_io_min.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_io_opt.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_logical_block_size.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_max_discard_sectors.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_max_hw_sectors.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_max_phys_segments.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_max_sectors.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_ordered=2.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_ordered=3.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/blk_queue_physical_block_size.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/block_ops_release_returns_int.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/bool.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/clflush.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/dmi_walk=1.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/dmi_walk=2.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/export_header.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/ioremap_cache.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/ioremap_wc.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/is_err_or_null.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/kzalloc_node.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/make_request_fn_returns_void.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/memcpy_inline.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/movntdqa.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/new_blk_dev_ops.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/pm_notifier.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/queue_flag_set_unlocked.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/ratelimit.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/time_after64.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/uintptr.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tmp/3.13.0-45-generic/vmalloc_node.E.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tr_mirror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/driver/tr_stripe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/4k_support.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/acpi_evaluate_object_typed.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/acpi_get_table_by_index.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/acpi_tables.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/atomic64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/bio_bi_size.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/bio_endio=2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/bio_endio=3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/bio_list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_max_segments.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_discard_granularity.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_discard_zeroes_data.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_flush.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_hardsect_size.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_io_min.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_io_opt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_logical_block_size.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_max_discard_sectors.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_max_hw_sectors.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_max_phys_segments.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_max_sectors.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_max_segments.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_ordered=2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_ordered=3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/blk_queue_physical_block_size.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/block_ops_release_returns_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/bool.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/clflush.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/clflush_cache_range.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/dmi_walk=1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/dmi_walk=2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/export_header.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/ioremap_cache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/ioremap_wc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/is_err_or_null.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/kzalloc_node.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/linux/kconfig.h" />
+		<Unit filename="../linux/kabi/tests/make_request_fn_returns_void.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/memcpy_inline.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/movntdqa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/new_blk_dev_ops.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/pm_notifier.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/queue_flag_set_unlocked.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/ratelimit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/task_struct_comm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/time_after64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/uintptr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../linux/kabi/tests/vmalloc_node.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

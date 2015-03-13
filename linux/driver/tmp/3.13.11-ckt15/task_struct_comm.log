@@ -1,0 +1,156 @@
++ gcc -Os -isystem /lib/modules/3.13.11-ckt15/build/include -isystem /lib/modules/3.13.11-ckt15/build/include/uapi -isystem /lib/modules/3.13.11-ckt15//source/arch/x86/include/generated -I /lib/modules/3.13.11-ckt15//source/arch/x86/include -I /lib/modules/3.13.11-ckt15//source/include -Wall -Werror -Werror-implicit-function-declaration -fno-strict-aliasing -include generated/autoconf.h -o tmp/3.13.11-ckt15/task_struct_comm.E.c -E /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c
+In file included from /lib/modules/linux-3.13.0/include/linux/sched.h:24:0,
+                 from /lib/modules/linux-3.13.0/include/linux/utsname.h:5,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:6,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/linux/mm_types.h:144:45: error: missing binary operator before token "("
+ #if defined(CONFIG_TRANSPARENT_HUGEPAGE) && USE_SPLIT_PMD_PTLOCKS
+                                             ^
+/lib/modules/linux-3.13.0/include/linux/mm_types.h:429:46: error: missing binary operator before token "("
+ #if defined(CONFIG_TRANSPARENT_HUGEPAGE) && !USE_SPLIT_PMD_PTLOCKS
+                                              ^
+In file included from /lib/modules/linux-3.13.0/include/linux/dcache.h:12:0,
+                 from /lib/modules/linux-3.13.0/include/linux/fs.h:8,
+                 from /lib/modules/linux-3.13.0/include/linux/ftrace.h:18,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:8,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/linux/lockref.h:26:5: error: missing binary operator before token "("
+ #if USE_CMPXCHG_LOCKREF
+     ^
+In file included from /lib/modules/linux-3.13.0/include/linux/sched.h:24:0,
+                 from /lib/modules/linux-3.13.0/include/linux/utsname.h:5,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:6,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/linux/mm.h:1525:5: error: missing binary operator before token "("
+ #if USE_SPLIT_PMD_PTLOCKS
+     ^
+In file included from /lib/modules/linux-3.13.0/include/net/net_namespace.h:13:0,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/net/netns/mib.h:15:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_IPV6)
+               ^
+In file included from /lib/modules/linux-3.13.0/include/net/net_namespace.h:17:0,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/net/netns/ipv6.h:78:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_NF_DEFRAG_IPV6)
+               ^
+In file included from /lib/modules/linux-3.13.0/include/linux/netfilter.h:5:0,
+                 from /lib/modules/linux-3.13.0/include/net/netns/netfilter.h:5,
+                 from /lib/modules/linux-3.13.0/include/net/net_namespace.h:20,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/linux/skbuff.h:2674:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_NETFILTER_XT_TARGET_TRACE)
+               ^
+In file included from /lib/modules/linux-3.13.0/include/net/net_namespace.h:21:0,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/net/netns/x_tables.h:18:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_IP_NF_TARGET_ULOG)
+               ^
+/lib/modules/linux-3.13.0/include/net/netns/x_tables.h:21:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_BRIDGE_EBT_ULOG)
+               ^
+In file included from /lib/modules/linux-3.13.0/include/net/net_namespace.h:26:0,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/net/netns/xfrm.h:59:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_IPV6)
+               ^
+In file included from /lib/modules/linux-3.13.0/include/linux/init_task.h:14:0,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/net/net_namespace.h:90:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_IPV6)
+               ^
+/lib/modules/linux-3.13.0/include/net/net_namespace.h:108:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_NF_DEFRAG_IPV6)
+               ^
+/lib/modules/linux-3.13.0/include/net/net_namespace.h:123:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_IP_VS)
+               ^
+In file included from /lib/modules/linux-3.13.0/include/linux/init_task.h:14:0,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/net/net_namespace.h:350:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_IPV6)
+               ^
++ gcc -Os -isystem /lib/modules/3.13.11-ckt15/build/include -isystem /lib/modules/3.13.11-ckt15/build/include/uapi -isystem /lib/modules/3.13.11-ckt15//source/arch/x86/include/generated -I /lib/modules/3.13.11-ckt15//source/arch/x86/include -I /lib/modules/3.13.11-ckt15//source/include -Wall -Werror -Werror-implicit-function-declaration -fno-strict-aliasing -include generated/autoconf.h -o tmp/3.13.11-ckt15/task_struct_comm.o -c /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c
+In file included from /lib/modules/linux-3.13.0/include/linux/sched.h:24:0,
+                 from /lib/modules/linux-3.13.0/include/linux/utsname.h:5,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:6,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/linux/mm_types.h:144:45: error: missing binary operator before token "("
+ #if defined(CONFIG_TRANSPARENT_HUGEPAGE) && USE_SPLIT_PMD_PTLOCKS
+                                             ^
+/lib/modules/linux-3.13.0/include/linux/mm_types.h:429:46: error: missing binary operator before token "("
+ #if defined(CONFIG_TRANSPARENT_HUGEPAGE) && !USE_SPLIT_PMD_PTLOCKS
+                                              ^
+In file included from /lib/modules/linux-3.13.0/include/linux/dcache.h:12:0,
+                 from /lib/modules/linux-3.13.0/include/linux/fs.h:8,
+                 from /lib/modules/linux-3.13.0/include/linux/ftrace.h:18,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:8,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/linux/lockref.h:26:5: error: missing binary operator before token "("
+ #if USE_CMPXCHG_LOCKREF
+     ^
+In file included from /lib/modules/linux-3.13.0/include/linux/sched.h:24:0,
+                 from /lib/modules/linux-3.13.0/include/linux/utsname.h:5,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:6,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/linux/mm.h:1525:5: error: missing binary operator before token "("
+ #if USE_SPLIT_PMD_PTLOCKS
+     ^
+In file included from /lib/modules/linux-3.13.0/include/net/net_namespace.h:13:0,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/net/netns/mib.h:15:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_IPV6)
+               ^
+In file included from /lib/modules/linux-3.13.0/include/net/net_namespace.h:17:0,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/net/netns/ipv6.h:78:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_NF_DEFRAG_IPV6)
+               ^
+In file included from /lib/modules/linux-3.13.0/include/linux/netfilter.h:5:0,
+                 from /lib/modules/linux-3.13.0/include/net/netns/netfilter.h:5,
+                 from /lib/modules/linux-3.13.0/include/net/net_namespace.h:20,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/linux/skbuff.h: In function ‘nf_reset_trace’:
+/lib/modules/linux-3.13.0/include/linux/skbuff.h:2674:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_NETFILTER_XT_TARGET_TRACE)
+               ^
+In file included from /lib/modules/linux-3.13.0/include/net/net_namespace.h:21:0,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/net/netns/x_tables.h: At top level:
+/lib/modules/linux-3.13.0/include/net/netns/x_tables.h:18:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_IP_NF_TARGET_ULOG)
+               ^
+/lib/modules/linux-3.13.0/include/net/netns/x_tables.h:21:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_BRIDGE_EBT_ULOG)
+               ^
+In file included from /lib/modules/linux-3.13.0/include/net/net_namespace.h:26:0,
+                 from /lib/modules/linux-3.13.0/include/linux/init_task.h:14,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/net/netns/xfrm.h:59:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_IPV6)
+               ^
+In file included from /lib/modules/linux-3.13.0/include/linux/init_task.h:14:0,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/net/net_namespace.h:90:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_IPV6)
+               ^
+/lib/modules/linux-3.13.0/include/net/net_namespace.h:108:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_NF_DEFRAG_IPV6)
+               ^
+/lib/modules/linux-3.13.0/include/net/net_namespace.h:123:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_IP_VS)
+               ^
+In file included from /lib/modules/linux-3.13.0/include/linux/init_task.h:14:0,
+                 from /home/sgosali/Documents/Work/RHEL6xFLASH/linux/driver/../kabi/tests/task_struct_comm.c:2:
+/lib/modules/linux-3.13.0/include/net/net_namespace.h:350:15: error: missing binary operator before token "("
+ #if IS_ENABLED(CONFIG_IPV6)
+               ^
