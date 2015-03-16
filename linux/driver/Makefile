@@ -118,5 +118,6 @@ EXTRA_CFLAGS	:= ${WARNING_CFLAGS} -Wall \
 		-I${TOP}/linux/driver \
 		-I${TOP}/common/driver -I${TOP}/common/util -I${TOP}/common/util \
 		$(if ${TERADIMM_KABI_H},-include ${TERADIMM_KABI_H},$(error you need to define TERADIMM_KABI_H)) \
-		$(if ${TD_CONFIG_H},-include ${TD_CONFIG_H},$(error you need to define TD_CONFIG_H))
+		$(if ${TD_CONFIG_H},-include ${TD_CONFIG_H},$(error you need to define TD_CONFIG_H)) \
+		-fdump-rtl-expand
 
